@@ -17,6 +17,10 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with debian-nvidia-installer. If not, see <https://www.gnu.org/licenses/gpl-3.0.html>.
+#
+# Modifications:
+# Copyright (c) 2026 Ihr Nightworker
+# Modified for better compatibility. Changes made in August 2026.
 
 tui::menu::main() {
     while true; do

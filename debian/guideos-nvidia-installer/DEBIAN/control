@@ -1,0 +1,13 @@
+Package: guideos-nvidia-installer
+Version: 0.14.5
+Architecture: amd64
+Maintainer: Leonardo Amaral <leonardo_amaral98@hotmail.com>
+Installed-Size: 255
+Depends: dialog, findutils, gawk, mokutil, pciutils, wget
+Section: utils
+Priority: optional
+Homepage: https://github.com/devleonardoamaral/guideos-nvidia-installer
+Description: NVIDIA driver installer with a Bash TUI
+ This tool allows you to install NVIDIA drivers on Debian using an interactive
+ text-based interface (TUI). It automates steps such as package installation,
+ compatibility checks, and graphics environment configuration.

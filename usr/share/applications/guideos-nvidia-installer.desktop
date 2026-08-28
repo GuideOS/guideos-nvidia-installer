@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=GuideOS Nvidia Installer
+Name[de_DE]=GuideOS Nvidia Installer
+
+Comment=Nvidia driver manager for Debian
+Comment[de_DE]=Tool zum verwalten des NVIDIA-Treibers
+
+Exec=pkexec /usr/bin/guideos-nvidia-installer
+Icon=guideos-nvidia-installer
+Terminal=true
+Type=Application
+Categories=GuideOS;

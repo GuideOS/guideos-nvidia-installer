@@ -1,5 +1,12 @@
 # debian-nvidia-installer
 
+This project is a fork/derivative work of the original `debian-nvidia-installer` 
+created by [Leonardo Amaral](https://github.com/devleonardoamaral/debian-nvidia-installer).
+Due to downstream compatibility adjustments and workflow preferences, 
+this project is maintained independently here.
+
+Licensed under the GNU General Public License v3.0 (see LICENSE).
+---
 NVIDIA driver installer with a Bash TUI. This tool allows you to install NVIDIA drivers on Debian using an interactive text-based interface (TUI).
 It automates steps such as package installation, compatibility checks, and graphics environment configuration.
 
@@ -100,20 +107,6 @@ To completely remove the script and its dependencies, run the following command:
 sudo apt purge --autoremove debian-nvidia-installer
 ```
 
----
 
-Para a versão em **Português do Brasil**, veja [README.pt_BR.md](README.pt_BR.md)
 
----
-.
-> Hello, Debians!
->
-> # xxx-nvidia-installer
 
-This project is a fork/derivative work of the original `debian-nvidia-installer` 
-created by [Leonardo Amaral]([https://github.com/devleonardoamaral/debian-nvidia-installer).
-
-Due to downstream compatibility adjustments and workflow preferences, 
-this project is maintained independently here.
-
-Licensed under the GNU General Public License v3.0 (see LICENSE).

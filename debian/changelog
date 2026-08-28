@@ -14,7 +14,7 @@ guideos-nvidia-installer (0.14.3) unstable; urgency=medium
 
  -- Nightworker <nightworker@guideos.de>  Tue, 30 Jun 2026 14:00:00 +0200
 
-guideos-nvidia-installer (0.14.2) unstable; urgency=medium
+debian-nvidia-installer (0.14.2) unstable; urgency=medium
 
   * Fixed dynamic guideos version detection for CUDA repository URLs
   * Updated CUDA driver versions (latest: 590, stable: 580)
@@ -22,9 +22,9 @@ guideos-nvidia-installer (0.14.2) unstable; urgency=medium
 
  -- Actionschnitzel <actionschnitzel@guideos.de>  Tue, 10 Dec 2025 12:00:00 +0100
 
-guideos-nvidia-installer (0.14.0) unstable; urgency=medium
+debian-nvidia-installer (0.14.0) unstable; urgency=medium
 
-  * Merged upstream changes from devleonardoamaral/guideos-nvidia-installer
+  * Merged upstream changes from devleonardoamaral/debian-nvidia-installer
   * Added support for deb822 sources format (for newer guideos/Ubuntu versions)
   * Added GitHub issue templates (bug reports, documentation, enhancements, questions)
   * Removed forced distro check in requirements
@@ -35,7 +35,7 @@ guideos-nvidia-installer (0.14.0) unstable; urgency=medium
 
  -- Actionschnitzel <actionschnitzel@guideos.de>  Sun, 08 Dec 2025 12:00:00 +0100
 
-guideos-nvidia-installer (0.13.1) unstable; urgency=medium
+debian-nvidia-installer (0.13.1) unstable; urgency=medium
 
   * Added complete German translation support for TUI
   * Extended translation system to support de_DE locale
@@ -48,7 +48,7 @@ guideos-nvidia-installer (0.13.1) unstable; urgency=medium
 
  -- Actionschnitzel <actionschnitzel@guideos.de>  Sat, 12 Oct 2025 15:30:00 +0200
 
-guideos-nvidia-installer (0.13.0) unstable; urgency=medium
+debian-nvidia-installer (0.13.0) unstable; urgency=medium
 
   * Initial release.
 

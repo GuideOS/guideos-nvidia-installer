@@ -1,4 +1,4 @@
-# debian-nvidia-installer
+# guideos-nvidia-installer
 
 This project is a fork/derivative work of the original `debian-nvidia-installer` 
 created by [Leonardo Amaral](https://github.com/devleonardoamaral/debian-nvidia-installer).

@@ -40,7 +40,7 @@ sudo debian-nvidia-installer
 
 # Installation
 
-You can install `debian-nvidia-installer` by downloading the `.deb` package from the **[Releases](https://github.com/GuideOS/debian-nvidia-installer/releases)** section of this repository.
+You can install `debian-nvidia-installer` by downloading the `.deb` package from the **[Releases](https://github.com/GuideOS/guideos-nvidia-installer/releases)** section of this repository.
 
 ### Option 1: Graphical Interface
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # ============================================================================
-# guideos-nvidia-installer - NVIDIA Driver Installer for GuideOS (TUI)
+# debian-nvidia-installer - NVIDIA Driver Installer for debian (TUI)
 # Copyright (C) 2025 Leonardo Amaral
 #
 # SPDX-License-Identifier:

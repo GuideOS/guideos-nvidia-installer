@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # =======================================================================
-# Titel       : GuideOS-Trixie-Nvidia.sh Dialog
+# Titel       : Guideos-Trixie-Nvidia.sh Dialog
 # Autor Original-Skript: Nightworker
 # Datum       : 2026-06-04
 # Beschreibung: GUI zur Installation und Deinstallation des NVIDIA-Treibers

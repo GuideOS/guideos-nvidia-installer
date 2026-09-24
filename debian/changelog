@@ -1,3 +1,8 @@
+guideos-nvidia-installer (0.14.6) unstable; urgency=medium
+  * driver update
+
+ -- Nightworker <nightworker@guideos.de>  Tue, 24 Sep 2026 08:00:00 +0200
+
 guideos-nvidia-installer (0.14.5) unstable; urgency=medium
   * language added
 

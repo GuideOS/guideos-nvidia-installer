@@ -15,8 +15,7 @@ export DIALOGRC="/usr/share/guideos-nvidia-installer/theme.dialogrc"
 #=======================================================================================================
 #Variablen festlegen
 DriverFolder="/usr/local/bin/Nvidia/"
-URL="https://de.download.nvidia.com/XFree86/Linux-x86_64/580.159.04/NVIDIA-Linux-x86_64-580.159.04.run"
-#URL="https://de.download.nvidia.com/XFree86/Linux-x86_64/595.71.05/NVIDIA-Linux-x86_64-595.71.05.run"
+URL="https://de.download.nvidia.com/XFree86/Linux-x86_64/580.178.04/NVIDIA-Linux-x86_64-580.178.04.run"
 DownloadCommand="wget -P ${DriverFolder} ${URL}"
 # Dateinamen aus der URL extrahieren
 FileName=$(basename "$URL")

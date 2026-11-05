@@ -292,8 +292,8 @@ tr::add "pt_BR" "tui::menu::flavors.option.debian.opensource.550" "v550 Código 
 tr::add "pt_BR" "tui::menu::flavors.option.legacy.580" "v580 Legacy Driver (nvidiarun.sh)"
 tr::add "pt_BR" "tui::menu::flavors.option.cuda.stable.proprietary" "v%1 Proprietário [Cuda Repo]"
 tr::add "pt_BR" "tui::menu::flavors.option.cuda.stable.opensource" "v%1 Código Aberto [Cuda Repo]"
-tr::add "pt_BR" "tui::menu::flavors.option.cuda.latest.proprietary" "v%1 Proprietário (instável) [Cuda Repo]"
-tr::add "pt_BR" "tui::menu::flavors.option.cuda.latest.opensource" "v%1 Código Aberto (instável) [Cuda Repo]"
+tr::add "pt_BR" "tui::menu::flavors.option.cuda.latest.proprietary" "v%1 Proprietário [Cuda Repo]"
+tr::add "pt_BR" "tui::menu::flavors.option.cuda.latest.opensource" "v%1 Código Aberto [Cuda Repo]"
 
 tr::add "en_US" "tui::menu::flavors.nav.start" "[TUI] Opening the Nvidia Driver Selection menu..."
 tr::add "en_US" "tui::menu::flavors.title" "SELECT DRIVER FLAVOR"
@@ -304,9 +304,9 @@ tr::add "en_US" "tui::menu::flavors.option.debian.proprietary.550" "v550 Proprie
 tr::add "en_US" "tui::menu::flavors.option.debian.opensource.550" "v550 Open Source [Debian Repo]"
 tr::add "en_US" "tui::menu::flavors.option.legacy.580" "v580 Legacy Driver (nvidiarun.sh)"
 tr::add "en_US" "tui::menu::flavors.option.cuda.stable.proprietary" "v%1 Proprietary [Cuda Repo]"
-tr::add "en_US" "tui::menu::flavors.option.cuda.stable.opensource" "v%1 Open Source [Cuda Repo]"
-tr::add "en_US" "tui::menu::flavors.option.cuda.latest.proprietary" "v%1 Proprietary (unstable) [Cuda Repo]"
-tr::add "en_US" "tui::menu::flavors.option.cuda.latest.opensource" "v%1 Open Source (unstable) [Cuda Repo]"
+tr::add "en_US" "tui::menu::flavors.option.cuda.stable.opensource" "v%1 Open Source  [Cuda Repo]"
+tr::add "en_US" "tui::menu::flavors.option.cuda.latest.proprietary" "v%1 Proprietary [Cuda Repo]"
+tr::add "en_US" "tui::menu::flavors.option.cuda.latest.opensource" "v%1 Open Source  [Cuda Repo]"
 
 tr::add "de_DE" "tui::menu::flavors.nav.start" "[TUI] Nvidia-Treiberauswahlmenü wird geöffnet..."
 tr::add "de_DE" "tui::menu::flavors.title" "TREIBERTYP AUSWÄHLEN"
@@ -318,8 +318,8 @@ tr::add "de_DE" "tui::menu::flavors.option.debian.opensource.550" "v550 Open Sou
 tr::add "de_DE" "tui::menu::flavors.option.legacy.580" "v580 Legacy Treiber (nvidiarun.sh)"
 tr::add "de_DE" "tui::menu::flavors.option.cuda.stable.proprietary" "v%1 Proprietär [Cuda Repo]"
 tr::add "de_DE" "tui::menu::flavors.option.cuda.stable.opensource" "v%1 Open Source [Cuda Repo]"
-tr::add "de_DE" "tui::menu::flavors.option.cuda.latest.proprietary" "v%1 Proprietär  (beta) [Cuda Repo]"
-tr::add "de_DE" "tui::menu::flavors.option.cuda.latest.opensource" "v%1 Open Source (beta) [Cuda Repo]"
+tr::add "de_DE" "tui::menu::flavors.option.cuda.latest.proprietary" "v%1 Proprietär [Cuda Repo]"
+tr::add "de_DE" "tui::menu::flavors.option.cuda.latest.opensource" "v%1 Open Source [Cuda Repo]"
 
 tui::menu::app_gpu_management() {
     log::info "$(tr::t "tui::menu::app_gpu_management.nav.start")"

@@ -23,7 +23,7 @@
 # Modified for better compatibility. Changes made in August 2026.
 
 declare -Ag CUDA_DRIVER_VERSIONS=(
-    ["latest"]="610"
+    ["latest"]="620"
     ["stable"]="595"
     ["legacy"]="580"
 )

@@ -258,9 +258,9 @@ tui::menu::flavors() {
     option_labels+=("$(tr::t "tui::menu::flavors.option.debian.opensource.550")")
     option_actions+=("installer::install_debian_opensource550")
 
-    # Neuer Eintrag direkt nach installer::install_debian_opensource550
+    # Integrierter Aufruf von nvidiarun ohne doppelte Passwortabfrage
     option_labels+=("$(tr::t "tui::menu::flavors.option.legacy.580")")
-    option_actions+=("bash \"\$(dirname \"\${BASH_SOURCE[0]}\")/../nvidiarun\"")
+    option_actions+=("installer::install_legacy_run")
 
     option_labels+=("$(tr::t_args "tui::menu::flavors.option.cuda.stable.proprietary" "$version_stable")")
     option_actions+=("cudarepo::install_driver \"stable\" \"proprietary\"")
@@ -289,7 +289,7 @@ tr::add "pt_BR" "tui::menu::flavors.prompt" \
 tr::add "pt_BR" "tui::menu::flavors.option.debian.proprietary.535" "v535 Proprietário [Debian Repo]"
 tr::add "pt_BR" "tui::menu::flavors.option.debian.proprietary.550" "v550 Proprietário [Debian Repo]"
 tr::add "pt_BR" "tui::menu::flavors.option.debian.opensource.550" "v550 Código Aberto [Debian Repo]"
-tr::add "pt_BR" "tui::menu::flavors.option.legacy.580" "v580 Legacy Driver (nvidiarun.sh)"
+tr::add "pt_BR" "tui::menu::flavors.option.legacy.580" "v580 Legacy Driver (nvidiarun)"
 tr::add "pt_BR" "tui::menu::flavors.option.cuda.stable.proprietary" "v%1 Proprietário [Cuda Repo]"
 tr::add "pt_BR" "tui::menu::flavors.option.cuda.stable.opensource" "v%1 Código Aberto [Cuda Repo]"
 tr::add "pt_BR" "tui::menu::flavors.option.cuda.latest.proprietary" "v%1 Proprietário [Cuda Repo]"
@@ -302,7 +302,7 @@ tr::add "en_US" "tui::menu::flavors.prompt" \
 tr::add "en_US" "tui::menu::flavors.option.debian.proprietary.535" "v535 Proprietary [Debian Repo]"
 tr::add "en_US" "tui::menu::flavors.option.debian.proprietary.550" "v550 Proprietary [Debian Repo]"
 tr::add "en_US" "tui::menu::flavors.option.debian.opensource.550" "v550 Open Source [Debian Repo]"
-tr::add "en_US" "tui::menu::flavors.option.legacy.580" "v580 Legacy Driver (nvidiarun.sh)"
+tr::add "en_US" "tui::menu::flavors.option.legacy.580" "v580 Legacy Driver (nvidiarun)"
 tr::add "en_US" "tui::menu::flavors.option.cuda.stable.proprietary" "v%1 Proprietary [Cuda Repo]"
 tr::add "en_US" "tui::menu::flavors.option.cuda.stable.opensource" "v%1 Open Source  [Cuda Repo]"
 tr::add "en_US" "tui::menu::flavors.option.cuda.latest.proprietary" "v%1 Proprietary [Cuda Repo]"
@@ -315,7 +315,7 @@ tr::add "de_DE" "tui::menu::flavors.prompt" \
 tr::add "de_DE" "tui::menu::flavors.option.debian.proprietary.535" "v535 Proprietär [Debian Repo]"
 tr::add "de_DE" "tui::menu::flavors.option.debian.proprietary.550" "v550 Proprietär [Debian Repo]"
 tr::add "de_DE" "tui::menu::flavors.option.debian.opensource.550" "v550 Open Source [Debian Repo]"
-tr::add "de_DE" "tui::menu::flavors.option.legacy.580" "v580 Legacy Treiber (nvidiarun.sh)"
+tr::add "de_DE" "tui::menu::flavors.option.legacy.580" "v580 Legacy Treiber (nvidiarun)"
 tr::add "de_DE" "tui::menu::flavors.option.cuda.stable.proprietary" "v%1 Proprietär [Cuda Repo]"
 tr::add "de_DE" "tui::menu::flavors.option.cuda.stable.opensource" "v%1 Open Source [Cuda Repo]"
 tr::add "de_DE" "tui::menu::flavors.option.cuda.latest.proprietary" "v%1 Proprietär [Cuda Repo]"

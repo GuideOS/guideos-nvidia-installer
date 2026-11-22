@@ -38,6 +38,29 @@ tr::add "en_US" "installer::post_installation.warn.flatpak" "After restarting th
 
 tr::add "de_DE" "installer::post_installation.warn.flatpak" "Führen Sie nach dem Neustart des Systems folgenden Befehl im Terminal aus, um die Flatpak-Pakete zu aktualisieren:\n\nflatpak update -y\n\nDies stellt sicher, dass Flatpak-Anwendungen die aktualisierten Grafikbibliotheken des neu installierten Treibers verwenden, und verhindert so Fehler oder Kompatibilitätsprobleme."
 
+installer::install_legacy_run() {
+    local script_dir
+    script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+    local run_target="$script_dir/nvidiarun"
+
+    # Fallback auf den Systempfad oder übergeordneten Ordner
+    if [[ ! -f "$run_target" && -f "/usr/lib/guideos-nvidia-installer/nvidiarun" ]]; then
+        run_target="/usr/lib/guideos-nvidia-installer/nvidiarun"
+    elif [[ ! -f "$run_target" && -f "$script_dir/../nvidiarun" ]]; then
+        run_target="$script_dir/../nvidiarun"
+    fi
+
+    if [[ ! -f "$run_target" ]]; then
+        log::error "nvidiarun nicht gefunden unter: $run_target"
+        tui::msgbox::warn "Das Skript 'nvidiarun' wurde nicht gefunden."
+        return 1
+    fi
+
+    log::info "Starte nvidiarun integriert über das Hauptmenü ($run_target)..."
+    bash "$run_target" --from-menu
+    return "$?"
+}
+
 installer::install_debian_proprietary535() {
     if ! tui::yesno::default "$(tr::t "default.tui.title.warn")" "$(tr::t "installer::install_debian_proprietary535.tui.yesno.proprietarydriver.confirm")"; then
         log::info "$(tr::t "default.script.canceled.byuser")"
@@ -484,20 +507,8 @@ tr::add "de_DE" "installer::install_nvidia.modeset.failure" "Fehler beim Aktivie
 tr::add "de_DE" "installer::install_nvidia.success" "NVIDIA-Treiber erfolgreich installiert."
 
 
-
-
 # ----------------------------------------------------------------------------
 # Function: installer::uninstall_nvidia
-# Description:
-#     Main function to completely uninstall the NVIDIA driver stack.
-#     This function removes kernel parameters, uninstalls NVIDIA-related
-#     packages, cleans up residual configuration files, restores Nouveau,
-#     and ensures the system is properly updated after changes.
-# Params:
-#     None
-# Returns:
-#     255 - If the user cancels the operation.
-#     0   - On success (though script::exit will terminate the script).
 # ----------------------------------------------------------------------------
 installer::uninstall_nvidia() {
     # Ask user confirmation before proceeding
@@ -519,9 +530,9 @@ installer::uninstall_nvidia() {
     fi
 
     # -------------------------------------------------------------------------
-    # NEU: Erkennung und automatisierter Aufruf der nvidiarun
+    # Erkennung und automatisierter Aufruf der nvidiarun
     # -------------------------------------------------------------------------
-    local run_script="/usr/lib/guideos-nvidia-installer/nvidiarun" # <-- HIER DEN ECHTEN PFAD EINTRAGEN
+    local run_script="/usr/lib/guideos-nvidia-installer/nvidiarun"
     local run_file_found=false
 
     # Prüfen, ob im Verzeichnis eine nvidia*.run Datei existiert
